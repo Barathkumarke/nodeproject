@@ -3,6 +3,11 @@ const usersController = require("../controller/users");
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  console.log("Hello from Node.js!");
+  res.send("Hello from Node.js!");
+});
+
 router.get("/signUp", usersController.signUp);
 
 router.get("/signIn", usersController.signIn);
