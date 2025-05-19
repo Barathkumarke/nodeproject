@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   console.log("Hello from Node.js!");
-  res.send("Hello from Node.js!");
+  res.send("Hello from Node.js! edited");
 });
 
 router.get("/signUp", usersController.signUp);
